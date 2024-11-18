@@ -7,6 +7,25 @@
 ## Overview
 This project is a simulation tool designed for the textile industry to automate product selection for knitting machines. It ensures efficient production by eliminating manual calculations and providing optimized recommendations for the next tasks. The tool reduces machine downtime and enhances productivity.
 
+
+---
+
+## Table of Contents
+- [Overview](#overview)
+- [Features](#features)
+- [Table-of-Contents](#table-of-contents)
+- [Requirements](#requirements)
+- [File Descriptions](#file-descriptions)
+- [Setup and Execution](#setup-and-execution)
+  - [Installation](#installation)
+  - [Quick Start](#quick-start)
+- [Customization](#customization)
+  - [Adjusting Threshold](#adjusting-threshold)
+  - [Redefining Hardness of Tasks](#redefining-hardness-of-tasks)
+- [License](#license)
+- [Contributing](#contributing)
+- [Contact](#contact)
+
 ---
 
 ## Features
@@ -15,14 +34,6 @@ This project is a simulation tool designed for the textile industry to automate 
 - **Threshold Conditions**: Prevents frequent product changes by enforcing minimum operation times.
 - **Grouping and Averages**: Groups tasks by product type and calculates average times for better scheduling insights.
 
----
-
-## Table of Contents
-- [Features](#features)
-- [File Descriptions](#file-descriptions)
-- [Setup and Execution](#setup-and-execution)
-- [Customization](#customization)
-- [Example Output](#example-output)
 
 ---
 
@@ -45,7 +56,9 @@ This project is a simulation tool designed for the textile industry to automate 
   - `pandas`
   - `openpyxl`
 
-### Installation
+---
+
+## Installation
 1. Clone the repository:
    ```bash
    git clone https://github.com/Ahmet-Yesevi/KnitSimLab
@@ -53,7 +66,10 @@ This project is a simulation tool designed for the textile industry to automate 
 2. Install dependencies:
     ```bash
     pip install -r requirements.txt
-### Quick Start
+
+---
+
+## Quick Start
 1. Prepare your data files:
 
 Order List: An Excel file  **`simulation.xlsx`** containing the product specifications such as order ID, part type, size, and color.
@@ -67,8 +83,10 @@ Machine List: An Excel file **`machines.xlsx`** with details about the current s
 - Recommendations for the next tasks.
 - Workload distribution across machines.
 
-### Customization
-## Adjusting Threshold
+---
+
+## Customization
+### Adjusting Threshold
 
 - Modify the Threshold variable in SimulationFunctions.py to set the minimum operation time before switching tasks:
     ```python
@@ -78,12 +96,12 @@ Machine List: An Excel file **`machines.xlsx`** with details about the current s
     ```python
     Primary = ["Front", "Back", "Sleeve"] # Easily Started by operators/workers
     NonPrimary = ["Collar", "Hood", "Band"] # Cannot be started by operators easily need an expertise
-
-### License
+---
+## License
 This project is licensed under the MIT License. See the LICENSE file for details.
+---
 
-
-### Contributing
+## Contributing
 Contributions are welcome! Please follow these steps:
 
 1. Fork the repository.
@@ -92,7 +110,8 @@ Contributions are welcome! Please follow these steps:
    git checkout -b feature-name
 3. Commit your changes and submit a pull request.
 
-### Contact
+---
+## Contact
 For questions or suggestions, feel free to contact:
 
 - Name: Ahmet Yesevi Nurcan
